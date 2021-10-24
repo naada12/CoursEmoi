@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Cours Emoi</string>
+
+
+    <!-- Page d'accueil -->
+    <string name="home_page_title"> A découvrir</string>
+    <string name="home_page_last_selection"> Dernier cours</string>
+
+
+    <!-- Page de Collection -->
+    <string name="collection_page_title"> Ma Collection </string>
+
+    <!-- Ajout de Cours -->
+    <string name="Add_course_page_title"> Ajout d\'un cours </string>
+    <string name="Add_course_page_upload"> Charger cours </string>
+
+
+    <!-- Cours costomise -->
+    <string name="item_page_name_course"> Nom du cours</string>
+    <string name="item_page_description_course"> Description du cours</string>
+
+</resources>
