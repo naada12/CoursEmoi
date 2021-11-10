@@ -7,11 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.project.database.AppDataBase;
 
 public class MainActivity extends AppCompatActivity {
     Intent myintent;
+    public static int iduser;
+
+    public static int getIduser() {
+        return iduser;
+    }
+
+    public static void setIduser(int iduser) {
+        MainActivity.iduser = iduser;
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +46,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(db.userDao().getUser(email.getText().toString(),pass.getText().toString())!=null){
+                MainActivity.setIduser(db.userDao().getUser(email.getText().toString(),pass.getText().toString()).getId());
                 myintent=new Intent(MainActivity.this,Home.class);
-                startActivity(myintent);}
+                myintent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                startActivity(myintent);}else{
+                    Toast.makeText(getApplicationContext(),"Login failed", Toast.LENGTH_LONG).show();
+                }
 
             }
         });

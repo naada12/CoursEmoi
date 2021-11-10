@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/titre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="102dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/desc"
         android:layout_width="209dp"
         android:layout_height="56dp"
         android:layout_marginStart="100dp"
@@ -48,7 +48,7 @@
         android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/titre" />
 
     <Button
         android:id="@+id/UploadBtn"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/uploadBtn1" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="102dp"
@@ -108,7 +108,7 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        app:layout_constraintTop_toBottomOf="@+id/desc" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -119,7 +119,7 @@
         android:layout_marginEnd="161dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toBottomOf="@+id/price"
         tools:srcCompat="@tools:sample/avatars" />
 
 

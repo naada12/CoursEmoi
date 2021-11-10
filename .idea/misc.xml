@@ -4,8 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CoursEmoi/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/CoursEmoi/app/src/main/res/layout/activity_payment.xml" value="0.264" />
+        <entry key="..\:/CoursEmoi/app/src/main/res/layout/activity_pdf_view.xml" value="0.13385416666666666" />
         <entry key="..\:/CoursEmoi/app/src/main/res/layout/add_course.xml" value="0.4" />
+        <entry key="..\:/CoursEmoi/app/src/main/res/layout/detail.xml" value="0.264" />
+        <entry key="..\:/CoursEmoi/app/src/main/res/layout/home.xml" value="0.4" />
+        <entry key="..\:/CoursEmoi/app/src/main/res/layout/items.xml" value="0.25905797101449274" />
+        <entry key="..\:/CoursEmoi/app/src/main/res/layout/pdfview.xml" value="0.13385416666666666" />
         <entry key="..\:/CoursEmoi/app/src/main/res/layout/register.xml" value="0.264" />
+        <entry key="..\:/CoursEmoi/app/src/main/res/xml/provider_path.xml" value="0.13385416666666666" />
         <entry key="..\:/CoursEmoi/app/src/main/res/xml/provider_paths.xml" value="0.13385416666666666" />
         <entry key="..\:/Users/COMPUTER/AndroidStudioProjects/Project/app/src/main/res/drawable-anydpi/ic_home.xml" value="0.2203125" />
         <entry key="..\:/Users/COMPUTER/AndroidStudioProjects/Project/app/src/main/res/layout/activity_main.xml" value="0.22" />
