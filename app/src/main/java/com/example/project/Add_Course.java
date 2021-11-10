@@ -50,10 +50,12 @@ public class Add_Course extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Cour cour=new Cour(titre.getText().toString(),desc.getText().toString(),Float.parseFloat(prix.getText().toString()),res,path);
-            db.courDao().insertOne(cour);
-                startActivity(myintent);
+                if (titre.getText().toString().length() > 0 && desc.getText().toString().length() > 0 && path.length() > 0 && res.length() > 0) {
+                    Cour cour = new Cour(titre.getText().toString(), desc.getText().toString(), Float.parseFloat(prix.getText().toString()), res, path);
+                    db.courDao().insertOne(cour);
+                    startActivity(myintent);
 
+                }
             }
         });
         uploadres.setOnClickListener(new View.OnClickListener() {

@@ -45,12 +45,15 @@ public class MainActivity extends AppCompatActivity {
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(email.getText().toString().length()>0 && pass.getText().toString().toString().length()>0){
                 if(db.userDao().getUser(email.getText().toString(),pass.getText().toString())!=null){
                 MainActivity.setIduser(db.userDao().getUser(email.getText().toString(),pass.getText().toString()).getId());
                 myintent=new Intent(MainActivity.this,Home.class);
                 myintent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 startActivity(myintent);}else{
                     Toast.makeText(getApplicationContext(),"Login failed", Toast.LENGTH_LONG).show();
+                }}else{
+                    Toast.makeText(getApplicationContext(),"Champs null", Toast.LENGTH_LONG).show();
                 }
 
             }
